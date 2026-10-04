@@ -1,0 +1,8 @@
+# Quote calculator conventions
+
+- Money is integer cents. Do not convert to decimal dollars.
+- Export `quoteTotal(items)` from an ES module.
+- Each item has `unitPriceCents` and `quantity`, both nonnegative safe integers.
+- Return `{ totalCents, currency: "USD" }`, including for an empty list.
+- Reject invalid inputs or an unsafe total with `RangeError`.
+- Do not add dependencies.
